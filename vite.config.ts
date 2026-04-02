@@ -15,9 +15,14 @@ export default defineConfig({
   build: {
     outDir: "dist",
     lib: {
-      entry: "src/index.ts",
+      entry: {
+        index: "src/index.ts",
+        "data/sentiment-ja": "src/data/sentiment-ja.ts",
+        "data/sentiment-en": "src/data/sentiment-en.ts",
+        "data/toxic-ja": "src/data/toxic-ja.ts",
+        "data/toxic-en": "src/data/toxic-en.ts",
+      },
       formats: ["cjs", "es"],
-      fileName: "index",
     },
     rollupOptions: {
       external: [/node:.+/, "@msgpack/msgpack", "fflate"],
