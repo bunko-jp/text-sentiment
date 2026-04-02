@@ -20,7 +20,7 @@ export default defineConfig({
       fileName: "index",
     },
     rollupOptions: {
-      external: [/node:.+/],
+      external: [/node:.+/, "@msgpack/msgpack", "fflate"],
     },
   },
 });

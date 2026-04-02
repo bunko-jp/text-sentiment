@@ -1,6 +1,7 @@
 {
-  "name": "nega-posi",
+  "name": "@bunkojp/text-sentiment",
   "version": "0.1.0",
+  "license": "CC0-1.0",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -22,21 +23,28 @@
     "format": "prettier --write .",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "test:cov": "vitest run --coverage",
-    "test": "vitest --run"
+    "test": "vitest --run",
+    "build:data": "bun run scripts/build-data.ts",
+    "demo": "vite --config demo/vite.config.ts"
   },
   "devDependencies": {
     "@eslint-community/eslint-plugin-eslint-comments": "^4.7.1",
+    "@eslint/js": "^10.0.1",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.57.1",
     "@typescript-eslint/parser": "^8.57.1",
     "@vitest/coverage-v8": "^4.1.0",
     "ajv": "^8.18.0",
+    "cuss": "^2.2.0",
     "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsdoc": "^62.8.0",
     "prettier": "^3.8.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "rimraf": "^6.1.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.57.1",
@@ -44,5 +52,8 @@
     "vite-plugin-dts": "^4",
     "vitest": "^4.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@msgpack/msgpack": "^3.1.3",
+    "fflate": "^0.8.2"
+  }
 }

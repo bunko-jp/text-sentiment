@@ -13,7 +13,7 @@ export default defineConfig({
   test: {
     globals: true,
     environment: "node",
-    setupFiles: [],
+    setupFiles: ["./spec/setup.ts"],
     coverage: {
       provider: "v8",
       reporter: ["text", "lcov"],

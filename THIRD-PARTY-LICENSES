@@ -1,0 +1,105 @@
+Third-Party Data Licenses
+=========================
+
+The pre-built binary files in src/data/ contain derived data from the
+following external corpora. Each corpus retains its original license.
+Users must comply with all applicable terms.
+
+Each entry includes a direct link to the license source as evidence.
+
+
+Sentiment Lexicons
+------------------
+
+### Tohoku University Japanese Sentiment Polarity Dictionary (via oseti)
+
+Used in:    src/data/sentiment-ja.bin
+Original:   Inui Laboratory, Tohoku University
+Terms:      https://www.cl.ecei.tohoku.ac.jp/Open_Resources-Japanese_Sentiment_Polarity_Dictionary.html
+Via:        https://github.com/ikegami-yukino/oseti
+Via LICENSE: https://raw.githubusercontent.com/ikegami-yukino/oseti/master/LICENSE
+License:    MIT (oseti wrapper); original dictionary permits commercial use with credit.
+
+  Citation required:
+  - Noun edition: Higashiyama, Inui, Matsumoto (2008)
+  - Verb/Adj edition: Kobayashi, Inui, Matsumoto, Tateishi, Fukushima (2005)
+
+  oseti wrapper: Copyright (c) 2019 IKEGAMI Yukino, MIT License.
+
+
+### AFINN-en-165
+
+Used in:  src/data/sentiment-en.bin
+URL:      https://github.com/fnielsen/afinn
+LICENSE:  https://raw.githubusercontent.com/fnielsen/afinn/master/LICENSE
+License:  Apache License 2.0
+
+  Copyright 2011-2023 Finn Arup Nielsen.
+  Citation: Nielsen, ESWC2011 Workshop, pp. 93-98.
+
+
+### VADER Sentiment Lexicon
+
+Used in:  src/data/sentiment-en.bin
+URL:      https://github.com/cjhutto/vaderSentiment
+LICENSE:  https://raw.githubusercontent.com/cjhutto/vaderSentiment/master/LICENSE.txt
+License:  MIT License
+
+  Copyright (c) 2016 C.J. Hutto.
+
+
+Toxic / Offensive Word Lexicons
+--------------------------------
+
+### inappropriate-words-ja
+
+Used in:  src/data/toxic-ja.bin
+URL:      https://github.com/MosasoM/inappropriate-words-ja
+LICENSE:  https://raw.githubusercontent.com/MosasoM/inappropriate-words-ja/master/LICENSE
+License:  MIT License
+
+  Copyright (c) 2020 K Hashimoto.
+
+
+### LDNOOBW V2 (List of Dirty, Naughty, Obscene, and Otherwise Bad Words)
+
+Used in:  src/data/toxic-ja.bin
+URL:      https://github.com/LDNOOBWV2/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words_V2
+LICENSE:  https://raw.githubusercontent.com/LDNOOBWV2/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words_V2/main/LICENSE
+License:  CC0 1.0 Universal (Public Domain)
+
+  No attribution required.
+
+
+### japanese-toxic-dataset
+
+Used in:  src/data/toxic-ja.bin (NCD feature extraction)
+URL:      https://github.com/inspection-ai/japanese-toxic-dataset
+LICENSE:  https://raw.githubusercontent.com/inspection-ai/japanese-toxic-dataset/main/LICENSE
+License:  Apache License 2.0
+
+
+### words/cuss
+
+Used in:  src/data/toxic-en.bin
+URL:      https://github.com/words/cuss
+LICENSE:  https://raw.githubusercontent.com/words/cuss/main/license
+License:  MIT License
+
+  Copyright (c) 2016 Titus Wormer.
+
+
+Runtime Dependencies
+--------------------
+
+### fflate
+
+URL:      https://github.com/101arrowz/fflate
+LICENSE:  https://raw.githubusercontent.com/101arrowz/fflate/master/LICENSE
+License:  MIT License
+
+### @msgpack/msgpack
+
+URL:      https://github.com/msgpack/msgpack-javascript
+LICENSE:  https://raw.githubusercontent.com/msgpack/msgpack-javascript/main/LICENSE
+License:  ISC License
